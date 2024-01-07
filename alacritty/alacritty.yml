@@ -4,6 +4,9 @@ env:
 font:
   size : 12.5
 
+window:
+  opacity : 0.8
+
 colors:
 
   primary:

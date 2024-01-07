@@ -1,0 +1,33 @@
+neofetch
+
+alias bat='batcat'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias ll='lsd -al --group-directories-first'
+alias fd='cd $(find ~/ -type d | fzf)'
+alias fb='git checkout $(git branch | fzf)'
+alias fh='eval $(history 0 | fzf --tac | sed "s/^[ ]*[0-9]*[ ]*//")'
+
+LS_COLORS='di=1;38;5;81:*=1;38;5;177:'
+export LS_COLORS
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+source ~/path/to/zsh-syntax-highlighting.zsh
+source ~/path/to/zsh-autosuggestions.zsh
+source ~/path/to/zsh-autocomplete.plugin.zsh
+
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[alias]='fg=blue,bold'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=blue,bold'
+ZSH_HIGHLIGHT_STYLES[command]='fg=blue,bold'
+ZSH_HIGHLIGHT_STYLES[path]='fg=cyan,bold'
+
+typeset -A ZSH_HIGHLIGHT_REGEXP
+ZSH_HIGHLIGHT_REGEXP+=('\bsudo\b' 'fg=green,bold')
+ZSH_HIGHLIGHT_HIGHLIGHTERS+=(regexp)
+
+bindkey '\t' autosuggest-accept
+bindkey '^n' menu-select
+bindkey -M menuselect '^n' menu-complete
+
+eval $(starship init zsh)

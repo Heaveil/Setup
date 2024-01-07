@@ -6,43 +6,37 @@ This repository contains configuration files and setup instructions for a custom
 
 ### Setup Details
 
-- **Distro**: Debian (Stable) with GNOME
+- **Distro**: Debian (Stable)
 - **Window Manager**: i3
-- **Status Bar**: Polybar
+- **Compositor**: Picom
+- **Shell**: Zsh
 - **Terminal**: Alacritty
 - **Multiplexer**: Tmux
-- **Shell**: Zsh with Oh-My-Zsh and Starship
+- **Status Bar**: Polybar
 - **Text Editor**: Neovim (LazyVim)
-- **IDE**: VsCode (TokyoNight theme, Pets, Vim extension)
-- **Music Player**: Spotify with Spicetify and Comfy theme
-- **Browser**: Firefox
+- **Music Player**: Spotify (Comfy)
 
 ## Installation Guides
 
+### Fonts
+
 - **Nerd Fonts**: [GitHub - Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
-- **Custom Scripts**: [Gist - Custom Scripts](https://gist.github.com/andersevenrud/015e61af2fd264371032763d4ed965b6)
-- **pfetch**: [GitHub - pfetch](https://github.com/dylanaraps/pfetch)
 
-## External Tools
+### ZSH
 
-### Shell
-
-- **Oh My Zsh**: [Oh My Zsh](https://ohmyz.sh)
-- **Starship**: [Starship](https://starship.rs)
+- **Starship**: [Starship](https://starship.rs/)
+- **Syntax-Highlighting**: [GitHub - Syntax-Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- **Autosuggestions**: [GitHub - Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- **Autocomplete**: [GitHub - Autocomplete](https://github.com/marlonrichert/zsh-autocomplete)
 
 ### Tmux
 
 - **Tmux Plugin Manager (TPM)**: [GitHub - TPM](https://github.com/tmux-plugins/tpm)
-- **Dracula Theme for Tmux**: [Dracula Theme - Tmux](https://draculatheme.com/tmux)
 
 ### Neovim
 
 - **Neovim**: [GitHub - Neovim](https://github.com/neovim/neovim)
-- **LazyVim Guide**: [LazyVim Guide](https://www.lazyvim.org)
-
-### VsCode
-
-- **VsCode Setup Guide**: [VsCode - Setup Guide](https://code.visualstudio.com/docs/setup/linux)
+- **LazyVim**: [LazyVim](https://www.lazyvim.org)
 
 ### Spotify
 
